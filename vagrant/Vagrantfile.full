@@ -26,13 +26,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
             v.cpus = 1
         end
     end
-    config.vm.define "nubu03" do |app|
-        app.vm.box = "bento/ubuntu-16.04"
-        app.vm.hostname = "nubu03"
-        app.vm.network  "private_network", ip: "192.168.12.13"
-        app.vm.provider "virtualbox" do |v|
-            v.memory= 512
-            v.cpus = 1
-        end
-   end
+    # Una máquina windows10
+    config.vm.define "win10" do |app|
+        app.vm.box = "vdelarosa/windows-10"
+        app.vm.hostname = "win10"
+        app.vm.network "private_network", ip: "192.168.12.13"
+    end
+    # Una máquina mac
+    config.vm.define "macsierra" do |app|
+        app.vm.box = "jhcook/macos-sierra"
+        app.vm.hostname = "macsierra"
+        app.vm.network "private_network", ip: "192.168.12.14"
+    end
 end
