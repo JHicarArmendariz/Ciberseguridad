@@ -32,3 +32,7 @@
   - `ldd programa`: Lista de librerías de las que depende un programa
   - `strace ./programa`: Muestra las llamadas al sistema y las señales que usa un programa durante su ejecución
   - `readelf -a ./programa`: Muestra información del contenido de un fichero en formato ELF
+
+## Ciberdefensa
+
+- **Firewall** IPTABLES <https://help.ubuntu.com/community/IptablesHowTo>
