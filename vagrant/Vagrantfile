@@ -12,6 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         app.vm.box = "bento/ubuntu-16.04"
         app.vm.hostname = "nubu01"
         app.vm.network  "private_network", ip: "192.168.12.11"
+        #app.vm.provision "shell", path: "config-ssh.sh"
         app.vm.provider "virtualbox" do |v|
             v.memory= 512
             v.cpus = 1
@@ -21,6 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         app.vm.box = "bento/ubuntu-16.04"
         app.vm.hostname = "nubu02"
         app.vm.network  "private_network", ip: "192.168.12.12"
+        #app.vm.provision "shell", path: "config-ssh.sh"
         app.vm.provider "virtualbox" do |v|
             v.memory= 512
             v.cpus = 1
@@ -30,6 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         app.vm.box = "bento/ubuntu-16.04"
         app.vm.hostname = "nubu03"
         app.vm.network  "private_network", ip: "192.168.12.13"
+        #app.vm.provision "shell", path: "config-ssh.sh"
         app.vm.provider "virtualbox" do |v|
             v.memory= 512
             v.cpus = 1
