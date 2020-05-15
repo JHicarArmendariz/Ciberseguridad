@@ -8,6 +8,16 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Dos nodos ubuntu 16.04
+    config.vm.define "kali00" do |app|
+        app.vm.box = "kalilinux/rolling"
+        app.vm.hostname = "kali00"
+        app.vm.network  "private_network", ip: "192.168.12.10"
+        app.vm.provider "virtualbox" do |v|
+            v.memory= 512
+            v.cpus = 1
+        end
+    end
+    # Dos nodos ubuntu 16.04
     config.vm.define "nubu01" do |app|
         app.vm.box = "bento/ubuntu-16.04"
         app.vm.hostname = "nubu01"
