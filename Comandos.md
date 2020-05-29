@@ -54,3 +54,12 @@
   - `-A` se refiere al tipo de alerta a ser registrada en log. En este caso, utilizando "full" se registra toda la información sobre los paquetes.
 
   - <http://manual-snort-org.s3-website-us-east-1.amazonaws.com/>
+
+## Ataques
+
+Previo a cualquier ataque, hay que descubrir vulnerabilidades, para ello, entre otras muchas cosas, podemos usar:
+
+- nmap: para escanear una red, ver puertos abiertos, SO de los equipos conectados a la red (con la opción `-O`, obtenemos el sistema operativo)
+- wireshark: Sniffer para ver el tráfico de red.
+
+- Metasploit: Es un framework de pentesting, normalmente viene instalado y configurado en Kali linux
